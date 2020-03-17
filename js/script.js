@@ -7,13 +7,13 @@ button.addEventListener("click", function(){
     }
     test = getRandomInt(3);
     if(test == 0){
-        result.innerHTML = "<div class='jumbotron'><h3>You are infected</h3><img src='https://image.shutterstock.com/image-photo/feeling-sick-tired-frustrated-young-600w-345950645.jpg'/></div>";
+        result.innerHTML = "<div class='jumbotron'><h3>You are infected</h3><img src='https://image.shutterstock.com/image-photo/feeling-sick-tired-frustrated-young-600w-345950645.jpg class='img-fluid'/></div>";
     }
     else if(test == 1){
-        result.innerHTML = "<div class='jumbotron'><h3>You are safe</h3><img src='https://image.shutterstock.com/image-photo/businessman-showing-thumbs-closeup-shot-600w-415992478.jpg'/></div>";
+        result.innerHTML = "<div class='jumbotron'><h3>You are safe</h3><img src='https://image.shutterstock.com/image-photo/businessman-showing-thumbs-closeup-shot-600w-415992478.jpg' class='img-fluid'/></div>";
     }
     else{
-        result.innerHTML = "<div class='jumbotron'><h3>It's too late</h3><img src='https://image.shutterstock.com/image-photo/alarm-clock-disintegrates-600w-717888439.jpg'/></div>";
+        result.innerHTML = "<div class='jumbotron'><h3>It's too late</h3><img src='https://image.shutterstock.com/image-photo/alarm-clock-disintegrates-600w-717888439.jpg' class='img-fluid'/></div>";
     }
     console.log(test)
 
