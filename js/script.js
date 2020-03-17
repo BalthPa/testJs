@@ -7,7 +7,7 @@ button.addEventListener("click", function(){
     }
     test = getRandomInt(3);
     if(test == 0){
-        result.innerHTML = "<div class='jumbotron'><h3>You are infected</h3><img src='https://image.shutterstock.com/image-photo/feeling-sick-tired-frustrated-young-600w-345950645.jpg' class='img-fluid'/></div>";
+        result.innerHTML = "<div class='jumbotron'><h3>You are infected</h3><img src='https://image.shutterstock.com/image-photo/coronavirus-covid-19-infected-patient-600w-1648211998.jpg' class='img-fluid'/></div>";
     }
     else if(test == 1){
         result.innerHTML = "<div class='jumbotron'><h3>You are safe</h3><img src='https://image.shutterstock.com/image-photo/businessman-showing-thumbs-closeup-shot-600w-415992478.jpg' class='img-fluid'/></div>";
