@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KJHZP99');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KJHZP99');</script>
   <!-- End Google Tag Manager -->
 
   <script data-ad-client="ca-pub-9040658153463359" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160816360-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160816360-1"></script>
 
-  gtag('config', 'UA-160816360-1');
-</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-160816360-1');
+  </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,12 +33,74 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJHZP99"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <div class="container text-center">
+    <div class="container text-center jumbotron">
         <h1>Do i have Covid-19 ?</h1>
 
         <button class="btn btn-primary" id="button">Test yourself</button>
 
+        <button class='btn btn-primary' id='buttonInfo' onclick='Infos()'>Infos</button>
+
         <div id="result"></div>
+
+        <div id='infos' style="display: none;">
+          <h2 class="text-center mt-5">Symptômes du Coronavirus</h2>
+          <h3 class="text-center">Trois signes principaux</h3>
+
+          <div class="col-sm-12 d-flex justify-content-around flex-wrap">
+            <div class="card col-sm-3 mt-2">
+              <img src="https://www.quickanddirtytips.com/sites/default/files/styles/article_main_image/public/images/2962/man-cough.jpg?itok=k2wtyMxW" class="card-img-top" alt="Homme qui tousse">
+              <div class="card-body">
+                <h5 class="card-title">Toux</h5>
+              </div>
+            </div>
+
+            <div class="card col-sm-3  mt-2">
+              <img src="https://cdn-media.rtl.fr/cache/phZA6p5KkEhdYPK0eLjhEw/880v587-0/online/image/2015/0128/7776365857_prendre-un-bain-d-eau-tiede-permet-de-reduire-la-fievre.jpg" class="card-img-top" alt="Homme avec de la fièvre">
+              <div class="card-body">
+                <h5 class="card-title">Fièvre</h5>
+              </div>
+            </div>
+
+            <div class="card col-sm-3  mt-2">
+              <img src="https://www.mieux-vivre-autrement.com/wp-content/uploads/2018/02/saude-guia-dor-de-cabeca.jpg" class="card-img-top" alt="Femme avec des maux de têtes">
+              <div class="card-body">
+                <h5 class="card-title">Maux de tête</h5>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="text-center">Autres symptômes</h3>
+          <div class="col-sm-12 d-flex justify-content-around flex-wrap">
+            <div class="card col-sm-3  mt-2">
+              <img src="https://www.planetesante.ch/var/ezdemo_site/storage/images/media/images/00-rubriques/depression-anxiete/fatigue_chronique/29744-1-eng-GB/fatigue_chronique_gallerylarge.jpg" class="card-img-top" alt="Femme en train de dormir">
+              <div class="card-body">
+                <h5 class="card-title">Fatigue</h5>
+              </div>
+            </div>
+
+            <div class="card col-sm-3  mt-2">
+              <img src="https://ed-amphora.fr/wp-content/uploads/2012/10/eviter-et-traiter-les-courbatures-662x281.jpg" class="card-img-top" alt="Homme avec des courbatures">
+              <div class="card-body">
+                <h5 class="card-title">Courbatures</h5>
+              </div>
+            </div>
+
+            <div class="card col-sm-3  mt-2">
+              <img src="https://www.medisite.fr/files/images/article/5/1/1/1092115/vignette-focus-wide.jpg" class="card-img-top" alt="Femme qui respire mal">
+              <div class="card-body">
+                <h5 class="card-title">Gene respiratoire</h5>
+              </div>
+            </div>
+
+          </div>
+
+          <h3>Comment réagir si vous avez ses symptômes ?</h3>
+          <h4>Ne pas aller aux Urgences</h4>
+          <h4>Appeler le 15</h4>
+          <h4>Ne pas rentrer en contact avec d'autres personnes</h4>
+
+        </div>
 
     </div>
     <div class="footer">
@@ -46,6 +109,7 @@
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="contact.html">Contact</a>
                 <a class="nav-item nav-link active" href="index.html">Try again</a>
+                <a class="nav-item nav-link active" href="#" onclick="Infos()">Infos</a>
                 
               </div>
             </div>
